@@ -30,8 +30,5 @@ public class Main {
         catch (IOException e) {
             e.printStackTrace();
         }
-        catch (NullPointerException ex){
-
-        }
     }
 }
