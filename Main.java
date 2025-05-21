@@ -11,8 +11,6 @@ public class Main {
                     fw.write(line.substring(0,line.indexOf("//")) + "\n");
                     System.out.println(line.substring(0,line.indexOf("//")) + "\n");
                 }
-                else if ((line.contains("//") && (line.charAt(0) == '/'))) {
-                }
                 else if(line.contains("/*") && (!line.contains("/*\""))){
                     fw.write(line.substring(0,line.indexOf("/*"))+"\n");
                     System.out.println(line.substring(0,line.indexOf("/*")));
