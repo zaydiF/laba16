@@ -7,7 +7,6 @@ public class Main {
         try(FileWriter fw = new FileWriter("code.txt"); BufferedReader br = new BufferedReader(new FileReader("codncom.txt"))){
             String line = br.readLine();
             while (line != null) {
-                //System.out.println(line);
                 if ((line.contains("//") && (line.charAt(0) != '/')) && (!line.contains("/\""))){
                     fw.write(line.substring(0,line.indexOf("//")) + "\n");
                     System.out.println(line.substring(0,line.indexOf("//")) + "\n");
